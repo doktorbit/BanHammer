@@ -1,0 +1,2 @@
+# BanHammer
+Bukkit Plugin
