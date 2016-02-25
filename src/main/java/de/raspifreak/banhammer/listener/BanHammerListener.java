@@ -1,6 +1,7 @@
 package de.raspifreak.banhammer.listener;
 
 import org.bukkit.BanList.Type;
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -27,16 +28,21 @@ public class BanHammerListener implements Listener {
 				if (p.isOp() || p.hasPermission("banhammer.ban.use")) {
 					if (event.getEntity() instanceof Player) {
 						Player pt = (Player) event.getEntity();
-						plugin.getServer().getBanList(Type.NAME).addBan(pt.getName(),
-								plugin.getConfig().getString("ban.message.banned"), null, "");
-						pt.kickPlayer(plugin.getConfig().getString("ban.message.banned"));
-						p.sendMessage(BanHammer.mod_prefix + plugin.getConfig().getString("ban.message.use"));
+						plugin.getServer().getBanList(Type.NAME).addBan(pt.getName(), ChatColor
+								.translateAlternateColorCodes('&', plugin.getConfig().getString("ban.message.banned")),
+								null, "");
+						pt.kickPlayer(ChatColor.translateAlternateColorCodes('&',
+								plugin.getConfig().getString("ban.message.banned")));
+						p.sendMessage(BanHammer.mod_prefix + ChatColor.translateAlternateColorCodes('&',
+								plugin.getConfig().getString("ban.message.use")));
 					} else {
-						p.sendMessage(BanHammer.mod_prefix + "Das ist kein Spieler!");
+						p.sendMessage(BanHammer.mod_prefix + ChatColor.translateAlternateColorCodes('&',
+								plugin.getConfig().getString("ban.message.not-a-player")));
 					}
 					event.setCancelled(true);
 				} else {
-					p.sendMessage(plugin.getConfig().getString("ban.message.dontuse"));
+					p.sendMessage(BanHammer.mod_prefix + ChatColor.translateAlternateColorCodes('&',
+							plugin.getConfig().getString("ban.message.dontuse")));
 					event.setCancelled(true);
 				}
 			}

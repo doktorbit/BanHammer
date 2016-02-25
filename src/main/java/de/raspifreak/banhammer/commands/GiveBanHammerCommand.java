@@ -30,7 +30,7 @@ public class GiveBanHammerCommand implements CommandExecutor {
 					im.setDisplayName(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("ban.itemname")));
 					bItem.setItemMeta(im);
 					p.getInventory().addItem(bItem);
-					p.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("ban.message.give")));
+					p.sendMessage(BanHammer.mod_prefix + ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("ban.message.give")));
 				}
 			}
 		}
