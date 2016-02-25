@@ -7,6 +7,11 @@
 	<name>RaspiFreak</name>
 	<description>The BanHammer Plugin for Spigot 1.8.8</description>
 	<url>https://github.com/doktorbit/BanHammer</url>
+	<scm>
+      <connection>scm:git:git@github.com:doktorbit/BanHammer.git</connection>
+      <url>scm:git:git@github.com:doktorbit/BanHammer.git</url>
+      <developerConnection>scm:git:git@github.com:doktorbit/BanHammer.git</developerConnection>
+    </scm>
 	<repositories>
 		<repository>
 			<id>spigot-repo</id>
