@@ -1,0 +1,23 @@
+# BanHammer Plugin für Bukkit.
+# Erstellt von RaspiFreak.
+
+# Das ist für den BanHammer
+ban:
+
+  # Alle Meldungen!!
+  message:
+
+    # Wenn der Spieler gebannt wird, hier der Grund.
+    banned: '&cThe BanHammer has spoken!'
+
+    # Meldung für den BanHammer User.
+    use: '&6Der Spieler wurde gebannt!'
+
+    # Meldung für die die keine Permissions haben.
+    dontuse: '&cEy! Du darfst das nicht! >:('
+
+    # Meldung wenn dir der BanHammer gegeben wird.
+    give: '&6Hier ist dein Spielzeug!'
+  
+  #Der Name des BanHammer's
+  itemname: '&cBanHammer'
