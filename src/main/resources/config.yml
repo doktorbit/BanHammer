@@ -18,6 +18,9 @@ ban:
 
     # Meldung wenn dir der BanHammer gegeben wird.
     give: '&6Hier ist dein Spielzeug!'
+    
+    # Meldung wenn es kein Spieler war!
+    not-a-player: '&cDas war kein Spieler!'
   
   #Der Name des BanHammer's
   itemname: '&cBanHammer'

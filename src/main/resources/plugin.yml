@@ -2,11 +2,11 @@ name: BanHammer
 version: 1.0.0
 main: de.raspifreak.banhammer.BanHammer
 website: http://www.raspifreak.de/
-description: This is a BanHammer Plugin for Guenni3
+description: Das ist ein BanHammer Plugin für Guenni3
 authors: [RaspiFreak]
 
 commands:
   banhammer:
-    description: Gives you the banhammer
+    description: Gibt dir den BanHammer
     usage: /<command>
     aliases: [bh]
