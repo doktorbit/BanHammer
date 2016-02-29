@@ -1,5 +1,5 @@
 name: BanHammer
-version: 1.0.0
+version: 1.0.1
 main: de.raspifreak.banhammer.BanHammer
 website: http://www.raspifreak.de/
 description: Das ist ein BanHammer Plugin für Guenni3
