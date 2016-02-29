@@ -3,7 +3,7 @@ version: 1.0.0
 main: de.raspifreak.banhammer.BanHammer
 website: http://www.raspifreak.de/
 description: Das ist ein BanHammer Plugin für Guenni3
-authors: [RaspiFreak]
+author: RaspiFreak
 
 commands:
   banhammer:
